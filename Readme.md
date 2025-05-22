@@ -48,6 +48,7 @@ project/
 ### install
 ```
 chmod +x setup_server.sh 2>/dev/null || true
+./setup_server.sh
 ```
 ## Usage
 
