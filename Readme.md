@@ -144,5 +144,5 @@ This project is distributed under the terms of the MIT license.
 
 ## Acknowledgments
 
-- DS-Sim simulation environment provided by the COMP3100/6105 Distributed Systems course
+- DS-Sim simulation environment provided by [DS-SIM](https://github.com/distsys-MQ/ds-sim)
 - Baseline algorithms and sample configurations from DS-Sim repository
