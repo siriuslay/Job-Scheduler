@@ -1,0 +1,7 @@
+Algorithm,Config,TotalServers,AvgUtilization,EffectiveUsage,TotalCost,AvgWaitingTime,AvgExecTime,AvgTurnaroundTime
+ff,sample-config01.xml,5,100.00,100.00,0.69,35,728,763
+bf,sample-config01.xml,5,100.00,100.00,0.69,35,728,763
+atl,sample-config01.xml,1,100.00,100.00,0.43,49,728,777
+fc,sample-config01.xml,2,100.00,100.00,0.51,1737,728,2465
+fafc,sample-config01.xml,5,100.00,100.00,0.75,145,728,873
+tos,sample-config01.xml,5,100.00,100.00,0.69,35,728,763

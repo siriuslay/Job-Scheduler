@@ -1,0 +1,7 @@
+Algorithm,Config,TotalServers,AvgUtilization,EffectiveUsage,TotalCost,AvgWaitingTime,AvgExecTime,AvgTurnaroundTime
+ff,ds-sample-config05.xml,61,63.26,62.24,489.38,7,4777,4784
+bf,ds-sample-config05.xml,58,64.19,64.56,434.26,7,4777,4784
+atl,ds-sample-config05.xml,1,100.00,100.00,360.18,320039,4777,324816
+fc,ds-sample-config05.xml,5,99.99,100.00,253.90,227419,4777,232196
+fafc,ds-sample-config05.xml,61,63.26,62.24,489.38,7,4777,4784
+tos,ds-sample-config05.xml,36,69.78,73.50,555.54,4,4777,4781

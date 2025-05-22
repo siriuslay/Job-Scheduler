@@ -1,0 +1,251 @@
+# ds-sim server 4-Apr, 2025 @ MQ - client-server
+# Server-side simulator started with '/home/wyd/code/projects/TOS/ds-sim/src/pre-compiled/ds-server -c /home/wyd/code/projects/TOS/ds-sim/configs/sample-configs/ds-sample-config01.xml -v all'
+# Waiting for connection to port 50000 of IP address 127.0.0.1
+RCVD HELO
+SENT OK
+RCVD AUTH wyd
+# Welcome  wyd!
+# The system information can be read from 'ds-system.xml'
+SENT OK
+RCVD REDY
+t 37: job 0 -- CPU: 3, Mem: 700, Disk: 3800, Est Runtime: 653 SUBMITTED
+      SENT JOBN 0 37 3 700 3800 653
+      RCVD GETS Capable 3 700 3800
+      SENT DATA 3 124
+      RCVD OK
+      SENT joon 0 inactive -1 4 16000 64000 0 0
+           joon 1 inactive -1 4 16000 64000 0 0
+           super-silk 0 inactive -1 16 64000 512000 0 0
+      RCVD OK
+      SENT .
+      RCVD SCHD 0 joon 0
+      job 0 (waiting) on joon 0 (booting) SCHEDULED
+      SENT OK
+      RCVD REDY
+t 60: job 1 -- CPU: 2, Mem: 1500, Disk: 2900, Est Runtime: 2025 SUBMITTED
+      SENT JOBN 1 60 2 1500 2900 2025
+      RCVD GETS Capable 2 1500 2900
+      SENT DATA 5 124
+      RCVD OK
+      SENT juju 0 inactive -1 2 4000 16000 0 0
+           juju 1 inactive -1 2 4000 16000 0 0
+           joon 0 booting 97 1 15300 60200 1 0
+           joon 1 inactive -1 4 16000 64000 0 0
+           super-silk 0 inactive -1 16 64000 512000 0 0
+      RCVD OK
+      SENT .
+      RCVD SCHD 1 juju 0
+      job 1 (waiting) on juju 0 (booting) SCHEDULED
+      SENT OK
+      RCVD REDY
+t 96: job 2 -- CPU: 2, Mem: 1500, Disk: 2100, Est Runtime: 343 SUBMITTED
+      SENT JOBN 2 96 2 1500 2100 343
+      RCVD GETS Capable 2 1500 2100
+      SENT DATA 5 124
+      RCVD OK
+      SENT juju 0 booting 120 0 2500 13100 1 0
+           juju 1 inactive -1 2 4000 16000 0 0
+           joon 0 booting 97 1 15300 60200 1 0
+           joon 1 inactive -1 4 16000 64000 0 0
+           super-silk 0 inactive -1 16 64000 512000 0 0
+      RCVD OK
+      SENT .
+      RCVD LSTJ juju 0
+      SENT DATA 1 59
+      RCVD OK
+      SENT 1 1 60 120 2025 2 1500 2900
+      RCVD OK
+      SENT .
+      RCVD SCHD 2 juju 1
+      job 2 (waiting) on juju 1 (booting) SCHEDULED
+      SENT OK
+      RCVD REDY
+t 97: job 0 on joon 0 RUNNING
+t 101: job 3 -- CPU: 2, Mem: 900, Disk: 2500, Est Runtime: 380 SUBMITTED
+       SENT JOBN 3 101 2 900 2500 380
+       RCVD GETS Capable 2 900 2500
+       SENT DATA 5 124
+       RCVD OK
+       SENT juju 0 booting 120 0 2500 13100 1 0
+            juju 1 booting 156 0 2500 13900 1 0
+            joon 0 active 97 1 15300 60200 0 1
+            joon 1 inactive -1 4 16000 64000 0 0
+            super-silk 0 inactive -1 16 64000 512000 0 0
+       RCVD OK
+       SENT .
+       RCVD LSTJ juju 0
+       SENT DATA 1 59
+       RCVD OK
+       SENT 1 1 60 120 2025 2 1500 2900
+       RCVD OK
+       SENT .
+       RCVD LSTJ juju 1
+       SENT DATA 1 59
+       RCVD OK
+       SENT 2 1 96 156 343 2 1500 2100
+       RCVD OK
+       SENT .
+       RCVD SCHD 3 joon 1
+       job 3 (waiting) on joon 1 (booting) SCHEDULED
+       SENT OK
+       RCVD REDY
+t 120: job 1 on juju 0 RUNNING
+t 137: job 4 -- CPU: 1, Mem: 100, Disk: 2000, Est Runtime: 111 SUBMITTED
+       SENT JOBN 4 137 1 100 2000 111
+       RCVD GETS Capable 1 100 2000
+       SENT DATA 5 124
+       RCVD OK
+       SENT juju 0 active 120 0 2500 13100 0 1
+            juju 1 booting 156 0 2500 13900 1 0
+            joon 0 active 97 1 15300 60200 0 1
+            joon 1 booting 161 2 15100 61500 1 0
+            super-silk 0 inactive -1 16 64000 512000 0 0
+       RCVD OK
+       SENT .
+       RCVD LSTJ juju 1
+       SENT DATA 1 59
+       RCVD OK
+       SENT 2 1 96 156 343 2 1500 2100
+       RCVD OK
+       SENT .
+       RCVD SCHD 4 joon 0
+       job 4 (running) on joon 0 (active) SCHEDULED
+       job 4 on joon 0 RUNNING
+       SENT OK
+       RCVD REDY
+t 156: job 2 on juju 1 RUNNING
+       job 5 -- CPU: 3, Mem: 2700, Disk: 2600, Est Runtime: 8 SUBMITTED
+       SENT JOBN 5 156 3 2700 2600 8
+       RCVD GETS Capable 3 2700 2600
+       SENT DATA 3 124
+       RCVD OK
+       SENT joon 0 active 97 0 15200 58200 0 2
+            joon 1 booting 161 2 15100 61500 1 0
+            super-silk 0 inactive -1 16 64000 512000 0 0
+       RCVD OK
+       SENT .
+       RCVD LSTJ joon 1
+       SENT DATA 1 59
+       RCVD OK
+       SENT 3 1 101 161 380 2 900 2500
+       RCVD OK
+       SENT .
+       RCVD SCHD 5 super-silk 0
+       job 5 (waiting) on super-silk 0 (booting) SCHEDULED
+       SENT OK
+       RCVD REDY
+t 161: job 3 on joon 1 RUNNING
+t 198: job 6 -- CPU: 4, Mem: 4000, Disk: 7600, Est Runtime: 1074 SUBMITTED
+       SENT JOBN 6 198 4 4000 7600 1074
+       RCVD GETS Capable 4 4000 7600
+       SENT DATA 3 124
+       RCVD OK
+       SENT joon 0 active 97 0 15200 58200 0 2
+            joon 1 active 161 2 15100 61500 0 1
+            super-silk 0 booting 236 13 61300 509400 1 0
+       RCVD OK
+       SENT .
+       RCVD LSTJ super-silk 0
+       SENT DATA 1 59
+       RCVD OK
+       SENT 5 1 156 236 8 3 2700 2600
+       RCVD OK
+       SENT .
+       RCVD SCHD 6 super-silk 0
+       job 6 (waiting) on super-silk 0 (booting) SCHEDULED
+       SENT OK
+       RCVD REDY
+t 225: job 7 -- CPU: 2, Mem: 500, Disk: 2100, Est Runtime: 442 SUBMITTED
+       SENT JOBN 7 225 2 500 2100 442
+       RCVD GETS Capable 2 500 2100
+       SENT DATA 5 124
+       RCVD OK
+       SENT juju 0 active 120 0 2500 13100 0 1
+            juju 1 active 156 0 2500 13900 0 1
+            joon 0 active 97 0 15200 58200 0 2
+            joon 1 active 161 2 15100 61500 0 1
+            super-silk 0 booting 236 9 57300 501800 2 0
+       RCVD OK
+       SENT .
+       RCVD SCHD 7 joon 1
+       job 7 (running) on joon 1 (active) SCHEDULED
+       job 7 on joon 1 RUNNING
+       SENT OK
+       RCVD REDY
+t 236: job 5 on super-silk 0 RUNNING
+       job 6 on super-silk 0 RUNNING
+t 249: job 8 -- CPU: 1, Mem: 100, Disk: 800, Est Runtime: 926 SUBMITTED
+       SENT JOBN 8 249 1 100 800 926
+       RCVD GETS Capable 1 100 800
+       SENT DATA 5 124
+       RCVD OK
+       SENT juju 0 active 120 0 2500 13100 0 1
+            juju 1 active 156 0 2500 13900 0 1
+            joon 0 active 97 0 15200 58200 0 2
+            joon 1 active 161 0 14600 59400 0 2
+            super-silk 0 active 236 9 57300 501800 0 2
+       RCVD OK
+       SENT .
+       RCVD SCHD 8 super-silk 0
+       job 8 (running) on super-silk 0 (active) SCHEDULED
+       job 8 on super-silk 0 RUNNING
+       SENT OK
+       RCVD REDY
+t 257: job 5 on super-silk 0 COMPLETED
+       SENT JCPL 257 5 super-silk 0
+       RCVD REDY
+t 303: job 4 on joon 0 COMPLETED
+       SENT JCPL 303 4 joon 0
+       RCVD REDY
+t 308: job 9 -- CPU: 2, Mem: 600, Disk: 1500, Est Runtime: 2010 SUBMITTED
+       SENT JOBN 9 308 2 600 1500 2010
+       RCVD GETS Capable 2 600 1500
+       SENT DATA 5 124
+       RCVD OK
+       SENT juju 0 active 120 0 2500 13100 0 1
+            juju 1 active 156 0 2500 13900 0 1
+            joon 0 active 97 1 15300 60200 0 1
+            joon 1 active 161 0 14600 59400 0 2
+            super-silk 0 active 236 11 59900 503600 0 2
+       RCVD OK
+       SENT .
+       RCVD SCHD 9 super-silk 0
+       job 9 (running) on super-silk 0 (active) SCHEDULED
+       job 9 on super-silk 0 RUNNING
+       SENT OK
+       RCVD REDY
+t 575: job 7 on joon 1 COMPLETED
+       SENT JCPL 575 7 joon 1
+       RCVD REDY
+t 642: job 2 on juju 1 COMPLETED
+       SENT JCPL 642 2 juju 1
+       RCVD REDY
+t 796: job 6 on super-silk 0 COMPLETED
+       SENT JCPL 796 6 super-silk 0
+       RCVD REDY
+t 1073: job 8 on super-silk 0 COMPLETED
+        SENT JCPL 1073 8 super-silk 0
+        RCVD REDY
+t 1215: job 1 on juju 0 COMPLETED
+        SENT JCPL 1215 1 juju 0
+        RCVD REDY
+t 1232: job 3 on joon 1 COMPLETED
+        SENT JCPL 1232 3 joon 1
+        RCVD REDY
+t 1337: job 0 on joon 0 COMPLETED
+        SENT JCPL 1337 0 joon 0
+        RCVD REDY
+t 1778: job 9 on super-silk 0 COMPLETED
+        SENT JCPL 1778 9 super-silk 0
+        RCVD REDY
+        SENT NONE
+        RCVD QUIT
+        SENT QUIT
+# -------------------------------------------------------------------------------------
+# 2 juju servers used with a utilisation of 100.00 at the cost of $0.09
+# 2 joon servers used with a utilisation of 100.00 at the cost of $0.26
+# 1 super-silk servers used with a utilisation of 100.00 at the cost of $0.34
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 1778, #jobs: 10 (failed 0 times)
+# total #servers used: 5, avg util: 100.00% (ef. usage: 100.00%), total cost: $0.69
+# avg waiting time: 35, avg exec time: 728, avg turnaround time: 763

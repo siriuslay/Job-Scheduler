@@ -1,0 +1,6 @@
+Config,Metric,My Method,The Best Baseline,Baseline Value,Improvement
+Config 05,AvgTurnaroundTime,4781.00,FF,4784.00,0.06%
+Config 05,AvgWaitingTime,4.00,FF,7.00,42.86%
+Config 05,TotalCost,555.54,FC,253.90,-118.80%
+Config 05,AvgUtilization,69.78,ATL,100.00,-30.22%
+Config 05,EffectiveUsage,73.50,ATL,100.00,-26.50%

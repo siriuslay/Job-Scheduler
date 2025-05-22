@@ -1,0 +1,4 @@
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 1778, #jobs: 10 (failed 0 times)
+# total #servers used: 5, avg util: 100.00% (ef. usage: 100.00%), total cost: $0.69
+# avg waiting time: 35, avg exec time: 728, avg turnaround time: 763
